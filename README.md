@@ -15,14 +15,13 @@ Data are preprocessed to different timesteps through [seq_data](seq_data.py)<br 
 To reproduce the experiment done in this project, run [the Experiment notebook](Experiments.ipynb) <br /> 
 In this notebook, we train: <br /> 
 ### Baseline Models
-1. Vanilla RNN <br /> 
-2. Vanilla LSTM <br /> 
+1. Vanilla RNN (single layer) <br /> 
+2. Vanilla LSTM (single layer) <br /> 
 ### Experiment Models
 3. Vertically-Stacked RNN <br /> 
-4. Vertically-Stacked Unidirectional LSTM <br /> 
-5. Vertically-Stacked Bidirectional LSTM <br /> 
-6. Vertically-Stacked RNN with Tc as auxiliary output <br /> 
-7. Vertically-Stacked LSTM with Tc as auxiliary output <br /> 
+4. Vertically-Stacked LSTM <br /> 
+5. Vertically-Stacked RNN with Tc as auxiliary output <br /> 
+6. Vertically-Stacked LSTM with Tc as auxiliary output <br /> 
 
 *The implementation of training and testing loops are in [utils.py](utils.py)*
 
