@@ -1,1 +1,31 @@
-# CS182-project
+# Li-ion Battery Estimation
+
+## Data Acquisition
+To obtain the data that used to train and test the models, run [this simulation notebook](simulation.ipynb). <br /> 
+This notebook runs the simulation to generate data, preprocesses the data into time series, and split them into training and testing set. <br /> 
+The csv files can be accessed here: [training set](train.csv) and [testing set](test.csv) <br /> 
+
+### Dataset overview:
+Input: ${V}$, ${I}$, ${T_s}$, ${prev\_SoC}$, ${prev\_Tc}$<br /> 
+Primary target: ${SoC}$ <br /> 
+Auxiliary target: ${T_c}$ (see model 6 and 7 below)
+
+## Experiment
+To reproduce the experiment done in this project, run [the LSTM notebook](LSTM.ipynb) <br /> 
+In this notebook, we train: <br /> 
+### Baseline Models
+1. Vanilla RNN <br /> 
+2. Vanilla LSTM <br /> 
+### Experiment Models
+3. Vertically-Stacked RNN <br /> 
+4. Vertically-Stacked Unidirectional LSTM <br /> 
+5. Vertically-Stacked Bidirectional LSTM <br /> 
+6. Vertically-Stacked RNN with Tc as auxiliary output <br /> 
+7. Vertically-Stacked LSTM with Tc as auxiliary output <br /> 
+
+*The implementation of training and testing loops are in [utils.py](utils.py)*
+### Performance Evaluation
+At the end of the notebook, model performance is evaluated using the following metrics:
+
+#### Referenc
+https://www.crosstab.io/articles/time-series-pytorch-lstm/
