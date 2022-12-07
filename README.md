@@ -9,9 +9,10 @@ The csv files can be accessed here: [training set](train.csv) and [testing set](
 Input: ${V}$, ${I}$, ${T_s}$, ${prev\_SoC}$, ${prev\_Tc}$<br /> 
 Primary target: ${SoC}$ <br /> 
 Auxiliary target: ${T_c}$ (see model 6 and 7 below)
+Data are preprocessed to different timesteps through [seq_data](seq_data.py)
 
 ## Experiment
-To reproduce the experiment done in this project, run [the LSTM notebook](LSTM.ipynb) <br /> 
+To reproduce the experiment done in this project, run [the Experiment notebook](Experiments.ipynb) <br /> 
 In this notebook, we train: <br /> 
 ### Baseline Models
 1. Vanilla RNN <br /> 
@@ -24,8 +25,10 @@ In this notebook, we train: <br />
 7. Vertically-Stacked LSTM with Tc as auxiliary output <br /> 
 
 *The implementation of training and testing loops are in [utils.py](utils.py)*
+
 ### Performance Evaluation
-At the end of the notebook, model performance is evaluated using the following metrics:
+At the end of the notebook, model performance is evaluated using the mse loss function
+visualization of loss over epoch for different models are also presented in the experiment notebook
 
 #### Referenc
 https://www.crosstab.io/articles/time-series-pytorch-lstm/
