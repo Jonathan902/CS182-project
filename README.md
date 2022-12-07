@@ -8,8 +8,8 @@ The csv files can be accessed here: [training set](train.csv) and [testing set](
 ### Dataset overview:
 Input: ${V}$, ${I}$, ${T_s}$, ${prev\_SoC}$, ${prev\_Tc}$<br /> 
 Primary target: ${SoC}$ <br /> 
-Auxiliary target: ${T_c}$ (see model 6 and 7 below)
-Data are preprocessed to different timesteps through [seq_data](seq_data.py)
+Auxiliary target: ${T_c}$ (see model 6 and 7 below)<br /> 
+Data are preprocessed to different timesteps through [seq_data](seq_data.py)<br /> 
 
 ## Experiment
 To reproduce the experiment done in this project, run [the Experiment notebook](Experiments.ipynb) <br /> 
@@ -27,8 +27,8 @@ In this notebook, we train: <br />
 *The implementation of training and testing loops are in [utils.py](utils.py)*
 
 ### Performance Evaluation
-At the end of the notebook, model performance is evaluated using the mse loss function
-visualization of loss over epoch for different models are also presented in the experiment notebook
+At the end of the notebook, model performance is evaluated using the mse loss function <br /> 
+visualization of loss over epoch for different models are also presented in the experiment notebook <br /> 
 
 #### Referenc
 https://www.crosstab.io/articles/time-series-pytorch-lstm/
