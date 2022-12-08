@@ -20,14 +20,14 @@ In this notebook, we train: <br />
 ### Experiment Models
 3. Vertically-Stacked RNN <br /> 
 4. Vertically-Stacked LSTM <br /> 
-5. Vertically-Stacked RNN with Tc as auxiliary output <br /> 
-6. Vertically-Stacked LSTM with Tc as auxiliary output <br /> 
+5. Vertically-Stacked RNN with Tc as auxiliary target <br /> 
+6. Vertically-Stacked LSTM with Tc as auxiliary target <br /> 
 
 *The implementation of training and testing loops are in [utils.py](utils.py)*
 
 ### Performance Evaluation
 At the end of the notebook, model performance is evaluated using the mse loss function <br /> 
-visualization of loss over epoch for different models are also presented in the experiment notebook <br /> 
+Visualization of loss over epoch for different models are also presented in the experiment notebook <br /> 
 
-#### Referenc
+#### Reference
 https://www.crosstab.io/articles/time-series-pytorch-lstm/
